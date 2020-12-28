@@ -165,7 +165,7 @@ class KeywordQueryEventListener(EventListener):
                     ExtensionResultItem(
                         icon=ITEM_ICON,
                         name=e["name"],
-                        description=self.bitwarden.get_entry_details(e["id"]["username"]),
+                        description=self.bitwarden.get_entry_details(e["id"])["username"],
                         on_enter=action,
                     )
                 )
